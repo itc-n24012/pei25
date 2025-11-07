@@ -1,7 +1,7 @@
 def search_kana_idx(kana):
     idx_1 = 0
     for gyou in hiragana_hyou:
-        idx_2 = gyou[0] 
+        idx_2 = 0 
         for ka in gyou:
             if ka == kana:
                 return (idx_1, idx_2)
@@ -32,10 +32,10 @@ print(codes)
 ango = input('暗号を入力してください:')
 kanas = ''
 if len(ango) % 2 == 0:
-    for i in range(len(ango) ** 2):
+    for i in range(len(ango) // 2):
         index_1 = int(ango[2 * i])
         index_2 = int(ango[2 * i + 1])
-        kanas += '？' if index_2 == 4 else hiragana_hyou[index_1][index_2]
+        kanas += '？' if index_2 > 4 else hiragana_hyou[index_1][index_2]
     print(kanas)
 else:
     print('暗号の文字数は偶然でなければなりません') 
