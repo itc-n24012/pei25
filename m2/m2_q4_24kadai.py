@@ -11,3 +11,6 @@ a = func(5, 6) # 5の6乗は大きい数
 z = [bool(x), bool(y), bool(a)]
 print(z)
 
+# bool関数とは...
+# 引数をTrueまたはFalseの真偽値に変換する関数のこと
+
