@@ -26,4 +26,4 @@ adjust_kosaji = adjust_recipe(recipe_kosaji, recipe_servs, cook_servs)
 
 cook_oosaji, cook_kosaji = divmod(adjust_kosaji, 3)
 
-print(f'{cook_servs}人前では、大さじが{cook_oosaji:.0f}杯と小さじが{round_kosaji(adjust_kosaji)}杯です。')
+print(f'{cook_servs}人前では、大さじが{cook_oosaji:.0f}杯と小さじが{round_kosaji(cook_kosaji)}杯です。')
